@@ -1,0 +1,69 @@
+
+
+/* ANCHOR Font-family */
+h1,h2,h3,h4,h5,p{
+    font-family: Paltino;
+}
+
+.menu{
+    background-color: white;
+    opacity: 0.9;
+
+}
+
+/* ANCHOR Header-text */
+.header-text{
+    color: white;
+}
+
+
+/* ANCHOR Footer */
+Footer{
+    background-color: #212F3C!important;
+}
+
+
+/* ANCHOR Background Image */
+.bg-MERN{
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.29)), to(rgba(0, 0, 0, 0.7))), url('./Photo/bg-MERN1.jpg');
+    height: 35vh;
+    background-size: cover;
+	background-position: center;
+}
+
+.bg-tools{
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.29)), to(rgba(0, 0, 0, 0.7))), url('./Photo/bg-tools.jpg');
+    height: 35vh;
+    background-size: cover;
+	background-position: center;
+}
+
+.bg-education{
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.29)), to(rgba(0, 0, 0, 0.7))), url('./Photo/bg-education.jpg');
+    height: 35vh;
+    background-size: cover;
+	background-position: center;
+}
+
+/* ANCHOR waipu image */
+.waipu-img {
+    width: 100vh; 
+    height: 100vh;
+}
+
+
+/* ANCHOR Position */
+
+    .vertical-center {
+       padding-top: 14vh;
+      }
+
+
+    /* large desktops and up ----------- */
+@media screen and (min-width: 1200px) {
+    .fix-bg{
+        background-attachment: fixed;
+        }
+    
+
+}
