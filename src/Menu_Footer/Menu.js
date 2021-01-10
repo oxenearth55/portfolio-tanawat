@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 
 const Menu = () =>{
@@ -11,33 +12,33 @@ const Menu = () =>{
   <div className="collapse navbar-collapse mx-3" id="navbarNavDropdown">
     <ul className="navbar-nav">
       <li className="nav-item ">
-        <a className="nav-link" href="/">Home <span className="sr-only">(current)</span></a>
+        <Link to = '/' className="nav-link">Home <span className="sr-only">(current)</span></Link>
       </li>
       <li className="nav-item">
-        <a className="nav-link" href="/experiance">Experiences</a>
+        <Link to ='/experience' className="nav-link">Experiences</Link>
       </li>
       <li className="nav-item">
-        <a className="nav-link" href="/works">Works</a>
+        <Link to ='/works' className="nav-link" >Works</Link>
       </li>
       <li className="nav-item">
-        <a className="nav-link" href="/blogs">Blogs</a>
+        <Link to ='/blogs' className="nav-link" >Blogs</Link>
       </li>
       <li className="nav-item">
-        <a className="nav-link" href="#">Resume</a>
+        <Link to ='#!' className="nav-link" >Resume</Link>
       </li>
       <li className="nav-item">
-        <a className="nav-link" href="#">Contact</a>
+        <Link to ='#!' className="nav-link" href="#">Contact</Link>
       </li>
-      <li className="nav-item dropdown">
-        <a className="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      {/* <li className="nav-item dropdown">
+        <Link to ='#!' className="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Dropdown link
-        </a>
+        </Link>
         <div className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-          <a className="dropdown-item" href="#">Action</a>
-          <a className="dropdown-item" href="#">Another action</a>
-          <a className="dropdown-item" href="#">Something else here</a>
+          <Link to ='#!' className="dropdown-item" href="#">Action</Link>
+          <Link to ='#!' className="dropdown-item" href="#">Another action</Link>
+          <Link to ='#!' className="dropdown-item" href="#">Something else here</Link>
         </div>
-      </li>
+      </li> */}
     </ul>
   </div>
 </nav>

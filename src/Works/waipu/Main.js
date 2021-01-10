@@ -31,18 +31,6 @@ import bg10 from '../../Photo/waipu/bg10.jpg';
 import bg11 from '../../Photo/waipu/bg11.jpg';
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 const Main = () => {
 
     const imageLayout = (img,bg,fix) => (
@@ -50,18 +38,12 @@ const Main = () => {
          <div className='container py-5'>
             <div className='row justify-content-center'>
                 <div className='col-'>
-                { <img src={img} className='waipu-img'/>}
-                                   
+                { <img src={img} className='waipu-img'/>}                                   
                 </div>
             </div>
-
         </div>
-    </div>
-       
-
-
+    </div>      
     );
-
 
  return(
      <Layout>
@@ -77,8 +59,7 @@ const Main = () => {
         {imageLayout(img9, bg9)}
         {imageLayout(img11, bg10, 'fix-bg')}
         {imageLayout(img10, bg11)}
-
-
+        
      </Layout>
  )   
 }

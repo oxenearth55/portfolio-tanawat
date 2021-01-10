@@ -13,12 +13,14 @@ import Blogs from './Blogs/Main';
 
 
 const Paths = () =>{
+
+
     return(
     
     <BrowserRouter>
         <Switch>
             <Route path="/"  exact component={Home}></Route>
-            <Route path="/experiance"  exact component={Experiance}></Route>
+            <Route path="/experience"  exact component={Experiance}></Route>
             <Route path="/works"  exact component={Works}></Route>
             <Route path="/contact" exact component={Contact}></Route>
             <Route path="/work/ecommerce"  exact component={Work1}></Route>

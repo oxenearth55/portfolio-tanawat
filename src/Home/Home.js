@@ -8,11 +8,17 @@ import Skills from '../Reuse/Skills';
 import Tools from './Tools';
 import Education from './Education';
 
+// ANCHOR Details 
+import { skill_MERN, skill_others } from '../Detail/skills';
+import { tools } from '../Detail/tools';
+
 //ANCHOR Image 
 import CoverImg from '../Photo/Cover-home.jpg'
 
 
-const home = () => {
+const Home = () => {
+
+    
 
     const header_education = () => (
         <div className='bg-education fix-bg'>          
@@ -32,7 +38,6 @@ const home = () => {
             </div>
     )
 
-    
 
     return(
         <Layout>
@@ -42,21 +47,14 @@ const home = () => {
             {header_education()}
             <Education/>
             {header_MEARN()}
-            <Skills skill1='MongoDB' skill2='Express' skill3='React' skill4='NodeJs' 
-            icon1='fa fa-database fa-2x yellow-text' icon2='fas fa-server fa-2x orange-text' icon3='fab fa-2x fa-react'
-             icon4='fab fa-node fa-2x green-text' 
-            description1='Web Developer' description2='MERN Stack'/>
-            <Skills description2='Others' skill1='HTML5' skill2='JavaScript' skill3='Bootstrap' skill4='CSS'
-            icon1='fab fa-html5 fa-2x 'icon2='fab fa-js-square fa-2x yellow-text' icon3='fab fa-bootstrap fa-2x purple-text'
-            icon4='fab fa-css3-alt fa-2x red-text'
-            />
+            <Skills skills={skill_MERN} header='MERN STACK' subHeader='Full-stack developer' />
+            <Skills skills={skill_others} header='Other skills' subHeader='web developer' />
             {header_tools()}
-
-            <Tools  />
+            <Tools tools={tools}  />
 
         </Layout>
     )
 
 }
 
-export default home;
+export default Home;
