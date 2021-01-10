@@ -70,10 +70,6 @@ export const skill_others = [
         id:9, 
         skill:'JSX',
         icon:'fab fa-react fa-2x blue-text'
-    },
-
-
-
-
+    }
 
 ]

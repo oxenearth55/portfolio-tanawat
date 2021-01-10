@@ -8,6 +8,8 @@ import Contact from './Contact/Main';
 import Works from './Works/Works';
 import Work1 from './Works/mahasawat/Main';
 import Work2 from './Works/waipu/Main';
+import Work3 from './Works/webBlog/Main';
+
 import Blogs from './Blogs/Main';
 
 
@@ -25,6 +27,8 @@ const Paths = () =>{
             <Route path="/contact" exact component={Contact}></Route>
             <Route path="/work/ecommerce"  exact component={Work1}></Route>
             <Route path="/work/restaurant"  exact component={Work2}></Route>
+            <Route path="/work/blog" exact component={Work3}></Route>
+
             <Route path="/blogs"  exact component={Blogs}></Route>
 
    </Switch>  

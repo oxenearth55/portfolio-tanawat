@@ -16,6 +16,8 @@ const Main = () => {
      <Layout>
          <Cover img={cover_work1} description1='Mahasawat E-commerce' description2='Using MERN Stack'/>
          <Vdo/>
+         <h5 className="mt-4">You can visit my Github repo here: <a href="https://github.com/oxenearth55/Mahasawat-Project" className="">Click</a></h5>
+
          <Content1/>
          <Story/>
          <Slide/>

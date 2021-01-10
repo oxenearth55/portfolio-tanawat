@@ -1,12 +1,17 @@
-import React from 'react';
+import React, {Fragment} from 'react';
 import { Link } from 'react-router-dom';
 // ANCHOR image
 import work1 from '../Photo/Work1/pic1.png';
 import work2 from '../Photo/waipu/cover.jpg';
+import myblog from '../Photo/myblog/intro.png';
+
+
+
+import Model1 from './model1';
+import Model2 from './model2';
 
 const Blogs = () => {
 
- 
 return(
   
     <div className="container mt-5">
@@ -20,91 +25,45 @@ return(
           The only way to do great work is to love what you do.
         </h5>
   
-      {/* <!-- Grid row --> */}
-      <div className="row align-items-center">
-  
-        {/* <!-- Grid column --> */}
-        <div className="col-lg-5">
-  
-          {/* <!-- Featured image --> */}
-          <div className="view overlay rounded z-depth-2 mb-lg-0 mb-4">
-            <img className="img-fluid" src={work1} alt="Sample image"/>
-            <a>
-              <div className="mask rgba-white-slight"></div>
-            </a>
-          </div>
-  
-        </div>
-        {/* <!-- Grid column --> */}
-  
-        {/* <!-- Grid column --> */}
-        <div className="col-lg-7">
-  
-          {/* <!-- Category --> */}
-          <div className="green-text">
-            <h6 className="font-weight-bold mb-3"><i className="fab fa-react pr-2 fa-2x blue-text"></i>Website</h6>
-          </div>
-          {/* <!-- Post title --> */}
-          <h4 className="font-weight-bold mb-3"><strong>Mahasawat E-commerce website (MERN stack)</strong></h4>
-          {/* <!-- Excerpt --> */}
-          <p>I created an eCommerce website for my senior project that focused
-               on driving shop owners in the Mahasawat community to use more channels 
-               for making transactions and grow their businesses efficiently. Moreover, this project is the beginning of a cooperative in the Mahasawat community, and the project's objective is to encourage them to be the strongest community like others.</p>
-          {/* <!-- Post data --> */}
-          <p>by <a className='text-info'><strong>Tanawat Limsakul</strong></a>, 19/07/2019</p>
-          {/* <!-- Read more button --> */}
-          <Link to ='/work/ecommerce'  className="btn btn-success btn-md btn-rounded mx-0">Read more</Link>
-  
-        </div>
-        {/* <!-- Grid column --> */}
-  
-      </div>
-      {/* <!-- Grid row --> */}
-  
-      <hr className="my-5"/>
+     <Model1 image={work1} 
+     icon='fas fa-shopping-bag pr-2 fa-2x blue-text'
+     sub_header= 'E-commerce Website'
+     title='Mahasawat E-commerce website (MERN stack)'
+     description='I created an eCommerce website for my senior project that focused
+     on driving shop owners in the Mahasawat community to use more channels 
+     for making transactions and grow their businesses efficiently. Moreover, 
+     this project is the beginning of a cooperative in the 
+     Mahasawat community, and the projects objective is to encourage 
+     them to be the strongest community like others.'
+     link='/work/ecommerce'
+     date='19/07/2019'
+     />
+
+    <Model2 image={myblog}
+    icon='fas fa-blog pr-2 fa-2x orange-text'
+    sub_header = 'Blog website'
+    title ='MyBloggy website (MERN stack)'
+    description ='I created a blog website for everyone who would like to share great things which are skills, knowledge, experiences, and imagination
+    to this world.
+    '
+    link='/work/blog'
+    date='02/12/2020 to Current'
+    />
 
 
-       {/* <!-- Grid row --> */}
-       <div className="row align-items-center">
-  
-  
 
-  {/* <!-- Grid column --> */}
-  <div className="col-lg-7">
+     <Model1 image={work2}
+     icon='fas fa-utensils pr-2 fa-1x'
+     sub_header='Restaurant'
+     title='Design Waipu restaurant menu'
+     description='I designed menu for Waipu restaurant in NewZealand by using Canva'
+     link='/work/restaurant'
+     date='13/05/2020'
+     
+     />
 
-    {/* <!-- Category --> */}
-    <div className="pink-text">
-      <h6 className="font-weight-bold mb-3"><i className="fas fa-utensils pr-2 fa-1x"></i>Restaurant</h6>
-    </div>
-    {/* <!-- Post title --> */}
-    <h4 className="font-weight-bold mb-3"><strong>Design Waipu restaurant menu </strong></h4>
-    {/* <!-- Excerpt --> */}
-    <p>I designed menu for Waipu restaurant in NewZealand by using Canva</p>
-    {/* <!-- Post data --> */}
-    <p>by <a className='text-info'><strong >Tanawat Limsakul</strong></a>, 13/05/2020</p>
-    {/* <!-- Read more button --> */}
-    <Link to='/work/restaurant' className="btn btn-pink btn-md btn-rounded mx-0">Read more</Link>
 
-  </div>
-  {/* <!-- Grid column --> */}
-
-  {/* <!-- Grid column --> */}
-  <div className="col-lg-5">
-
-    {/* <!-- Featured image --> */}
-    <div className="view overlay rounded z-depth-2 mb-lg-0 mb-4">
-      <img className="img-fluid" src={work2} alt="Sample image"/>
-      <a>
-        <div className="mask rgba-white-slight"></div>
-      </a>    
-    </div>
-  </div>
-  {/* <!-- Grid column --> */}
-
-</div>
-{/* <!-- Grid row --> */}
-
-<hr className="my-5"/>
+      
       
     </section>
     {/* <!--Section: Content--> */}

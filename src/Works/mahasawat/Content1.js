@@ -15,9 +15,7 @@ const Content1 = () => (
    {/* <!--Section: Content--> */}
               <section class="text-justify">
               <blockquote class="blockquote bq-primary">
-
-               <h2 class="font-weight-bold text-center mb-4 bq-title">Abstract</h2>
-          
+               <h2 class="font-weight-bold text-center mb-4 bq-title">Abstract</h2>       
                     <p>Mahasawat canal is a popular tourist attraction in Nakhon Pathom province, with many attractions and stores 
                         offering local products. To obtain these products, buyers need to travel to the site and purchase products 
                         directly from the stores. Traveling to Mahasawat can be inconvenient to several potential buyers, and many 
@@ -28,7 +26,7 @@ const Content1 = () => (
                         limited IT knowledge and skills. Thus, it is also crucial to consider this challenge when designing and 
                         implementing the e-commerce platform.
  </p>       
-                    <p>The proposed web-based application using HTML, CSS, JavaScript, react, and mongoDB languages to develop 
+                    <p>The proposed web-based application using HTML, CSS, JavaScript, react (hook), express, NodeJs and mongoDB to develop 
                         a web application. The system consists of twelve main functions, which are login, search product,
                          manage bank account, manage purchase, manage cart, checkout process, manage inventory, manage order, 
                          manage product, manage profile, manage user account, and manage shipping.
@@ -37,7 +35,7 @@ const Content1 = () => (
           <br/>
           <blockquote class="blockquote bq-danger">
 
-<h2 class="font-weight-bold text-center my-4 bq-title">Problem Statement</h2>
+<h2 class="font-weight-bold text-center my-4 bq-title">Objectives of the project</h2>
 <h5>The objectives of the project include:</h5>
  <p className='note-danger'>
 1. To develop an e-commerce platform for the Mahasawat community for their identity product sales.<br/>

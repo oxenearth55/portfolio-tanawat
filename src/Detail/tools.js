@@ -22,6 +22,13 @@ export const tools = [
 
     {
         id:1, 
+        title: 'MongoDB Compass',
+        description:' MongoDB Compass is the GUI for MongoDB. Compass allows you to analyze and understand the contents of the data.',
+        icon:'fab fa-envira green-text pr-2'
+    },
+
+    {
+        id:1, 
         title: 'Firebase',
         description:'A Backend-as-a-Service (Baas) that provides developers with a variety of tools and services to help them develop quality apps.',
         icon:'fas fa-fire-alt red-text pr-2'
