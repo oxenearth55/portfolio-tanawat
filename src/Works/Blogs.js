@@ -7,8 +7,8 @@ import myblog from '../Photo/myblog/intro.png';
 
 
 
-import Model1 from './model1';
-import Model2 from './model2';
+import Model1 from '../Reuse/model1';
+import Model2 from '../Reuse/model2';
 
 const Blogs = () => {
 

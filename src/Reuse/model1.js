@@ -1,7 +1,9 @@
 import React, {Fragment} from 'react'
 import { Link } from 'react-router-dom'
+import {Image} from 'cloudinary-react';
+import Moment from 'react-moment'
 
-const model1 = ({icon,sub_header,title,description,date,image,link}) => {
+const model1 = ({icon,sub_header,title,description,date,image,link , blog=false, imgId}) => {
     return (
         <Fragment>
         {/* <!-- Grid row --> */}
@@ -12,7 +14,9 @@ const model1 = ({icon,sub_header,title,description,date,image,link}) => {
  
              {/* <!-- Featured image --> */}
              <div className="view overlay rounded z-depth-2 mb-lg-0 mb-4">
-               <img className="img-fluid" src={image} alt="Sample image"/>
+               {blog ? <Image className="img-fluid"  cloudName="dsrdvi9rl" publicId={imgId}  crope="scale" />
+               :   <img className="img-fluid" src={image} alt="Sample image"/>
+                }
                <a>
                  <div className="mask rgba-white-slight"></div>
                </a>
@@ -33,10 +37,17 @@ const model1 = ({icon,sub_header,title,description,date,image,link}) => {
              {/* <!-- Excerpt --> */}
              <p>{description}</p>
              {/* <!-- Post data --> */}
-             <p>by <a className='text-info'><strong>Tanawat Limsakul</strong></a>, {date}</p>
+             
+             <p>by <a className='text-info'><strong>Tanawat Limsakul</strong></a>, 
+                {blog? <Moment format='DD/MM/YYYY'>{date}</Moment> :
+                  date
+                }       
+             </p>
              {/* <!-- Read more button --> */}
-             <Link to ={link}  className="btn btn-success btn-md btn-rounded mx-0">Read more</Link>
- 
+             {blog ? <a href={link}  className="btn btn-success btn-md btn-rounded mx-0">Read more</a>
+             :  <Link to ={link}  className="btn btn-success btn-md btn-rounded mx-0">Read more</Link>
+              }
+            
            </div>
            {/* <!-- Grid column --> */}
  

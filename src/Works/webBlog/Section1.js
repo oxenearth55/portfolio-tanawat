@@ -36,8 +36,8 @@ const Section1 = () => {
 <h5>Benefits to Users</h5>
 <p className='note-success'>
     1. Share contents easily <br/> 
-    2. Access a good comminity<br/>
-    3. See variety contents that they like <br/>
+    2. Access a good community<br/>
+    3. Can see variety contents that they wish <br/>
  <br/>
 </p>
 
